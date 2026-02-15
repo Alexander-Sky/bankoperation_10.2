@@ -72,6 +72,14 @@ def test_filter_by_state():
     ...
 
 def test_sort_by_date():
-    # Тестовые данные и проверки
-    ...
+##Тестирование
+
+###Запуск тестов
+
+pytest
+
+###Проверка покрытия
+
+coverage run -m pytest
+coverage report -m
 

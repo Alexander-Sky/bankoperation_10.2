@@ -33,3 +33,12 @@ def test_invalid_data():
     # Проверка на некорректные данные
     assert mask_account_card("Неизвестный тип 1234") == "Неизвестный тип 1234"
     assert get_date("Некорректная дата") == "Некорректная дата"
+
+
+def test_mask_account_card():
+    assert mask_account_card("Visa Platinum 4500123456789012") == "Visa Platinum 4500 12** **** 9012"
+    # Другие тесты
+
+def test_get_date():
+    assert get_date('2023-10-01T12:00:00') == '01.10.2023'
+    # Другие тесты
