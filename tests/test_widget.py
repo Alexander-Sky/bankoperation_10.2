@@ -1,4 +1,4 @@
-from src.widget import mask_account_card, get_date
+from src.widget import get_date, mask_account_card
 
 
 def test_mask_account_card():
@@ -36,9 +36,13 @@ def test_invalid_data():
 
 
 def test_mask_account_card():
-    assert mask_account_card("Visa Platinum 4500123456789012") == "Visa Platinum 4500 12** **** 9012"
+    assert (
+        mask_account_card("Visa Platinum 4500123456789012")
+        == "Visa Platinum 4500 12** **** 9012"
+    )
     # Другие тесты
 
+
 def test_get_date():
-    assert get_date('2023-10-01T12:00:00') == '01.10.2023'
+    assert get_date("2023-10-01T12:00:00") == "01.10.2023"
     # Другие тесты

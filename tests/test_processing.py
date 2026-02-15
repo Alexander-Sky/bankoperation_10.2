@@ -50,7 +50,7 @@ def test_sort_by_date():
 
 
 def test_filter_by_state(sample_operations):
-    filtered = filter_by_state(sample_operations, 'EXECUTED')
+    filtered = filter_by_state(sample_operations, "EXECUTED")
     assert len(filtered) > 0
     # Другие тесты
 
