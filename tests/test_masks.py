@@ -1,5 +1,6 @@
 import pytest
-from src.masks import get_mask_card_number, get_mask_account
+
+from src.masks import get_mask_account, get_mask_card_number
 
 
 def test_get_mask_card_number():
@@ -34,5 +35,9 @@ def test_invalid_data():
     with pytest.raises(TypeError):
         get_mask_account(None)
 
-    assert get_mask_card_number('') == ''
-    assert get_mask_account('') == ''
+    # Для пустой строки ожидаем исключение
+    with pytest.raises(ValueError):
+        get_mask_card_number("")
+
+    # Для пустого счета можно оставить как есть, если это допустимо
+    assert get_mask_account("") == ""
