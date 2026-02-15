@@ -1,16 +1,13 @@
-# This is a sample Python script.
+from src.widget import mask_account_card, get_date
 
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    # Примеры использования функций
+    try:
+        print(mask_account_card("Visa Platinum 7000792289606361"))
+        print(mask_account_card("Счет 73654108430135874305"))
+        print(get_date("2024-03-11T02:26:18.671407"))
+    except Exception as e:
+        print(f"Произошла ошибка: {e}")
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f"Hi, {name}")  # Press Strg+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == "__main__":
-    print_hi("PyCharm")
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
