@@ -36,15 +36,3 @@ def test_invalid_data():
 
     assert get_mask_card_number('') == ''
     assert get_mask_account('') == ''
-
-
-def test_invalid_data():
-    # Невалидные входные данные
-    with pytest.raises(TypeError):
-        get_mask_card_number(None)
-
-    with pytest.raises(TypeError):
-        get_mask_account(None)
-
-    assert get_mask_card_number("") == ""
-    assert get_mask_account("") == ""
