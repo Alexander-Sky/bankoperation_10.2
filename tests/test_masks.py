@@ -39,5 +39,6 @@ def test_invalid_data():
     with pytest.raises(ValueError):
         get_mask_card_number("")
 
-    # Для пустого счета можно оставить как есть, если это допустимо
-    assert get_mask_account("") == ""
+    # Для пустого счета тоже ожидаем исключение
+    with pytest.raises(ValueError):
+        get_mask_account("")
