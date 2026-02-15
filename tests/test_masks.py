@@ -32,7 +32,7 @@ def test_get_mask_account():
 
 def test_invalid_data():
     # Невалидные входные данные
-    assert get_mask_card_number(None) == None
-    assert get_mask_account(None) == None
+    assert get_mask_card_number(None) is None  # Исправлено сравнение
+    assert get_mask_account(None) is None  # Исправлено сравнение
     assert get_mask_card_number('') == ''
     assert get_mask_account('') == ''
