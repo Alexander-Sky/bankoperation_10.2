@@ -1,12 +1,10 @@
-[tool.poetry]
+[project]
 name = "bankoperation-10-2"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Alexander Schischkin",email = "schischkin2@yandex.com"}
-]
+authors = ["Alexander Schischkin <schischkin2@yandex.com>"]  # Теперь в формате простой строки
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.14"  # Переместили сюда
 
 [tool.poetry.packages]
 packages = [{include = "src/bankoperation_10"}]
