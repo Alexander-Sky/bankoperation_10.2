@@ -6,6 +6,7 @@ def get_mask_card_number(card_number: str) -> str:
         raise ValueError("Номер карты должен содержать 16 цифр")
     return f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
 
+
 def get_mask_account(account_number: str) -> str:
     """
     Маскирует номер банковского счета по формату ** XXXX
