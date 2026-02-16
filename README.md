@@ -60,9 +60,11 @@ def sort_by_date(operations: List[Dict], descending: bool = True) -> List[Dict]:
     return sorted(operations, key=lambda x: x['date'], reverse=descending)
 
 ## Тестирование
-### Запуск тестов
+
+### Запуск тестов с покрытием
 
 pytest
+
 
 ## Проверка покрытия
 
