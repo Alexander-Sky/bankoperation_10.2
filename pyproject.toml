@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "bankoperation_10"}]
+packages = [{include = "src/bankoperation_10"}]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
