@@ -18,8 +18,23 @@ git clone https://github.com/Alexander-Sky/bankoperation_10.2.git
 poetry install
 poetry shell
 
-# Или через pip
+## Зависимости
+
+### Основные зависимости
+* pytest - фреймворк для тестирования
+* pytest-cov - плагин для измерения покрытия
+* coverage - инструмент для анализа покрытия
+
+### Инструменты разработки
+* flake8 - проверка стиля кода
+* black - форматирование кода
+* isort - сортировка импортов
+* mypy - статическая типизация
+
+## Запуск тестов
+```bash
 pip install -r requirements.txt
+pytest
 
 ## Использование
 ### Импорт функций
